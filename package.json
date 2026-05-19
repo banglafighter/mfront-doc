@@ -1,0 +1,8 @@
+{
+  "name": "mfront-doc",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "pnpm --filter starter run start",
+    "build": "pnpm --filter starter run build"
+  }
+}
