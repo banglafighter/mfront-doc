@@ -1,3 +1,5 @@
 packages:
   - application/*
   - dependencies/*
+
+shamefullyHoist: true
