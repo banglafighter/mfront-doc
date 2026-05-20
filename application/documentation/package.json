@@ -3,6 +3,10 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
+  "dependencies": {
+    "@react-code-view/core": "^3.1.0",
+    "@react-code-view/react": "^3.1.0"
+  },
   "exports": {
     ".": {
       "import": "./src/index.ts",

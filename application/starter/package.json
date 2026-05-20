@@ -7,11 +7,7 @@
     "start": "vite"
   },
   "dependencies": {
-    "documentation": "workspace:*",
-    "lucide-react": "^1.8.0",
-    "mfront": "0.0.5-alpha.41",
-    "mfront-default-ui": "0.0.5-alpha.41",
-    "mfront-ui": "0.0.5-alpha.41"
+    "documentation": "workspace:*"
   },
   "devDependencies": {
     "vite": "^8.0.11",

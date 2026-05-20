@@ -1,7 +1,8 @@
+shamefullyHoist: true
+verifyDepsBeforeRun: false
 packages:
   - application/*
   - dependencies/*
-
 minimumReleaseAgeExclude:
   - '@types/react@19.2.15'
   - mfront-core@0.0.5-alpha.41
@@ -10,5 +11,3 @@ minimumReleaseAgeExclude:
   - mfront@0.0.5-alpha.41
   - mmcore-ui@0.0.5-alpha.41
   - mmcore@0.0.5-alpha.41
-
-shamefullyHoist: true
