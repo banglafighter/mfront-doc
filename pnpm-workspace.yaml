@@ -2,4 +2,13 @@ packages:
   - application/*
   - dependencies/*
 
+minimumReleaseAgeExclude:
+  - '@types/react@19.2.15'
+  - mfront-core@0.0.5-alpha.41
+  - mfront-default-ui@0.0.5-alpha.41
+  - mfront-ui@0.0.5-alpha.41
+  - mfront@0.0.5-alpha.41
+  - mmcore-ui@0.0.5-alpha.41
+  - mmcore@0.0.5-alpha.41
+
 shamefullyHoist: true

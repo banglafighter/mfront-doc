@@ -7,6 +7,10 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "paths": {}
+    "paths": {
+      "documentation": [
+        "application/documentation"
+      ]
+    }
   }
 }

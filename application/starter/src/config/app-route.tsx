@@ -4,6 +4,7 @@ import PrivateLayout from "../layouts/private-layout";
 import PublicLayout from "../layouts/public-layout";
 import NotFoundPage from "../common/not-found-page";
 import BookUr from "../features/book/book-ur";
+import {DocumentationRegistry} from "documentation";
 
 
 export default class AppRoute extends MRoute {
@@ -26,6 +27,7 @@ export default class AppRoute extends MRoute {
 
     registerRoute(route: MRoute): void {
         BookUr.registerRoute(route)
+        DocumentationRegistry.register(route)
     }
 
 }
