@@ -6,10 +6,16 @@ import {
     CardSubTitle,
     CardTitle,
     Separator,
-    Tab,
+    Tab, Table, TBody, TD, TH, THead, TR,
 } from "mfront-ui";
 import {UINode} from "mmcore";
-import CodeView, {CodeEditor} from "@react-code-view/react";
+import {CodeEditor} from "@react-code-view/react";
+
+export interface PropsDetails {
+    propsName: string
+    propsType?: string
+    hints?: string
+}
 
 interface ComponentViewerProps {
     title: string;
@@ -17,10 +23,11 @@ interface ComponentViewerProps {
     codes: string
     ui: UINode
     language?: string
+    props?: PropsDetails[]
 }
 
 
-export default function ComponentViewer({title, subtitle, codes, ui, language = "jsx"} : ComponentViewerProps) {
+export default function ComponentViewer({title, subtitle, codes, ui, props, language = "jsx"} : ComponentViewerProps) {
     const tabData: WebTabProps = {
         items: [
             {
@@ -28,7 +35,7 @@ export default function ComponentViewer({title, subtitle, codes, ui, language = 
                 tabId: "ui",
                 component: (
                     <div className={"rounded-sm"}>
-                        <Separator/>
+                        <Separator className={"mb-3"}/>
                         {ui}
                     </div>
                 )
@@ -38,11 +45,35 @@ export default function ComponentViewer({title, subtitle, codes, ui, language = 
                 tabId: "codes",
                 component: (
                     <div className={"rounded-sm"}>
-                        <Separator/>
+                        <Separator className={"mb-3"}/>
                         <CodeEditor
                             language={language}
                             code={codes}
                         />
+                    </div>
+                )
+            },
+            {
+                labelContent: "Props",
+                tabId: "props",
+                isHidden: true,
+                component: (
+                    <div className={"rounded-sm"}>
+                        <Separator className={"mb-3"}/>
+                        <Table>
+                            <THead>
+                                <TR>
+                                    <TH>Prop</TH><TH>Type</TH><TH>Hints</TH>
+                                </TR>
+                            </THead>
+                            <TBody>
+                                {props?.map((row: PropsDetails, index: number) =>(
+                                    <TR key={index}>
+                                        <TD>{row.propsName}</TD><TD>{row.propsType}</TD><TD>{row.hints}</TD>
+                                    </TR>
+                                ))}
+                            </TBody>
+                        </Table>
                     </div>
                 )
             },
