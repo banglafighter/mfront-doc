@@ -2,3 +2,10 @@ shamefullyHoist: true
 packages:
   - application/*
   - dependencies/*
+minimumReleaseAgeExclude:
+  - mfront-core@0.0.5-alpha.53
+  - mfront-default-ui@0.0.5-alpha.53
+  - mfront-ui@0.0.5-alpha.53
+  - mfront@0.0.5-alpha.53
+  - mmcore-ui@0.0.5-alpha.53
+  - mmcore@0.0.5-alpha.53
