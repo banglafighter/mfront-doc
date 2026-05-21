@@ -1,5 +1,5 @@
 import {type SidebarMenuItemProps} from "mmcore-ui";
-import {BookOpen, Form, Gem, MonitorDown, SquareTerminal} from "lucide-react";
+import {Form, Gem, SquareTerminal} from "lucide-react";
 import {ComponentsUr} from "documentation";
 
 
