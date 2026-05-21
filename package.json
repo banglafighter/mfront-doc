@@ -7,11 +7,11 @@
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
-    "mfront": "0.0.5-alpha.46",
-    "mfront-default-ui": "0.0.5-alpha.46",
-    "mfront-ui": "0.0.5-alpha.46",
-    "mmcore-ui": "0.0.5-alpha.46",
-    "mmcore": "0.0.5-alpha.46",
+    "mfront": "0.0.5-alpha.48",
+    "mfront-default-ui": "0.0.5-alpha.48",
+    "mfront-ui": "0.0.5-alpha.48",
+    "mmcore-ui": "0.0.5-alpha.48",
+    "mmcore": "0.0.5-alpha.48",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

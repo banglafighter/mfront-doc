@@ -196,8 +196,8 @@ export default function ComToastPage() {
     return (
         <>
             <ComponentViewer
-                title='Button'
-                subtitle='Button demo and codes'
+                title='Toast'
+                subtitle='Toast demo and codes'
                 ui={getUI()}
                 codes={getCodes()}
             />

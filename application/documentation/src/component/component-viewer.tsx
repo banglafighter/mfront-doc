@@ -21,7 +21,7 @@ interface ComponentViewerProps {
     title: string;
     subtitle?: string
     codes: string
-    ui: UINode
+    ui?: UINode
     language?: string
     props?: PropsDetails[]
 }
@@ -33,6 +33,7 @@ export default function ComponentViewer({title, subtitle, codes, ui, props, lang
             {
                 labelContent: "UI",
                 tabId: "ui",
+                isHidden: !ui,
                 component: (
                     <div className={"rounded-sm"}>
                         <Separator className={"mb-3"}/>

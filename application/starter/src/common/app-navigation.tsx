@@ -41,6 +41,9 @@ export const AppNavigation = {
                                 {menuContent: "Tab", navUrl: ComponentsUr.ui.tabPage},
                                 {menuContent: "Dialog", navUrl: ComponentsUr.ui.dialogPage},
                                 {menuContent: "Toast", navUrl: ComponentsUr.ui.toastPage},
+                                {menuContent: "Dropdown", navUrl: ComponentsUr.ui.dropdownPage},
+                                {menuContent: "Popover", navUrl: ComponentsUr.ui.popoverPage},
+                                {menuContent: "Sidebar", navUrl: ComponentsUr.ui.sidebarPage},
                             ]
                         },
                     ]
