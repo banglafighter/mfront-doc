@@ -38,7 +38,7 @@ export const AppNavigation = {
                             menuContent: (<><Gem/> Advanced</>),
                             collapsible: true,
                             nested: [
-                                {menuContent: "Button", navUrl: ComponentsUr.ui.button},
+                                {menuContent: "Tab", navUrl: ComponentsUr.ui.tabPage},
                             ]
                         },
                     ]
