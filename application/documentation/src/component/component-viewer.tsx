@@ -49,6 +49,7 @@ export default function ComponentViewer({title, subtitle, codes, ui, props, lang
                         <CodeEditor
                             language={language}
                             code={codes}
+                            className={"text-[18px]"}
                         />
                     </div>
                 )

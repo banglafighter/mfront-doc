@@ -1,11 +1,10 @@
 import ComponentViewer, {PropsDetails} from "../../component/component-viewer";
-import {Button} from "mfront-ui";
+import {Button, ButtonGroup} from "mfront-ui";
 import {CircleFadingArrowUpIcon} from "lucide-react";
 
 function getButtonCodes() {
     return (
-        `
-        <>
+        `<>
             <div className={"mt-5 mb-1 font-medium"}>Variant</div>
             <div className={"flex gap-2"}>
                 <Button variant="primary">Primary</Button>
@@ -80,6 +79,41 @@ function getButtonProps() {
     return props
 }
 
+function getButtonGroupUI() {
+
+    return (
+        <div className={"flex gap-4"}>
+            <ButtonGroup>
+                <Button variant="primary">Archive</Button>
+                <Button variant="outline">Report</Button>
+            </ButtonGroup>
+
+            <ButtonGroup orientation={"vertical"}>
+                <Button variant="outline">Archive</Button>
+                <Button variant="danger">Report</Button>
+            </ButtonGroup>
+        </div>
+    )
+
+}
+function getButtonGroupCodes() {
+    return (
+        `
+<div className={"flex gap-4"}>
+    <ButtonGroup>
+        <Button variant="primary">Archive</Button>
+        <Button variant="outline">Report</Button>
+    </ButtonGroup>
+
+    <ButtonGroup orientation={"vertical"}>
+        <Button variant="outline">Archive</Button>
+        <Button variant="danger">Report</Button>
+    </ButtonGroup>
+</div>
+        `
+    )
+}
+
 
 export default function ComButtonPage() {
     return (
@@ -90,6 +124,14 @@ export default function ComButtonPage() {
                 ui={getButtonUI()}
                 codes={getButtonCodes()}
             />
+
+            <ComponentViewer
+                title='Button Group'
+                subtitle='Button Group demo and codes'
+                ui={getButtonGroupUI()}
+                codes={getButtonGroupCodes()}
+            />
+
         </div>
     )
 }

@@ -3,16 +3,3 @@ verifyDepsBeforeRun: false
 packages:
   - application/*
   - dependencies/*
-minimumReleaseAgeExclude:
-  - mfront-core@0.0.5-alpha.44
-  - mfront-default-ui@0.0.5-alpha.44
-  - mfront-ui@0.0.5-alpha.44
-  - mfront@0.0.5-alpha.44
-  - mmcore-ui@0.0.5-alpha.44
-  - mmcore@0.0.5-alpha.44
-  - mfront-core@0.0.5-alpha.45
-  - mfront-default-ui@0.0.5-alpha.45
-  - mfront-ui@0.0.5-alpha.45
-  - mfront@0.0.5-alpha.45
-  - mmcore-ui@0.0.5-alpha.45
-  - mmcore@0.0.5-alpha.45

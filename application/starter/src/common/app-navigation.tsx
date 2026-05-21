@@ -1,5 +1,5 @@
 import {type SidebarMenuItemProps} from "mmcore-ui";
-import {BookOpen, MonitorDown, SquareTerminal} from "lucide-react";
+import {BookOpen, Form, Gem, MonitorDown, SquareTerminal} from "lucide-react";
 import {ComponentsUr} from "documentation";
 
 
@@ -15,13 +15,30 @@ export const AppNavigation = {
             {
                 grouped: {
                     labelContent: "Components",
-                    items: [{
-                        menuContent: (<><SquareTerminal/> Essentials</>),
-                        collapsible: true,
-                        nested: [
-                            {menuContent: "Button", navUrl: ComponentsUr.ui.button},
-                        ]
-                    },
+                    items: [
+                        {
+                            menuContent: (<><SquareTerminal/> Essentials</>),
+                            collapsible: true,
+                            nested: [
+                                {menuContent: "Button", navUrl: ComponentsUr.ui.button},
+                                {menuContent: "Card", navUrl: ComponentsUr.ui.cardPage},
+                                {menuContent: "Image", navUrl: ComponentsUr.ui.imagePage},
+                            ]
+                        },
+                        {
+                            menuContent: (<><Form/> Inputs</>),
+                            collapsible: true,
+                            nested: [
+                                {menuContent: "Button", navUrl: ComponentsUr.ui.button},
+                            ]
+                        },
+                        {
+                            menuContent: (<><Gem/> Advanced</>),
+                            collapsible: true,
+                            nested: [
+                                {menuContent: "Button", navUrl: ComponentsUr.ui.button},
+                            ]
+                        },
                     ]
                 }
             }
