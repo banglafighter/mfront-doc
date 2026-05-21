@@ -1,5 +1,4 @@
 shamefullyHoist: true
-verifyDepsBeforeRun: false
 packages:
   - application/*
   - dependencies/*
