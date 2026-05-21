@@ -40,6 +40,7 @@ export const AppNavigation = {
                             nested: [
                                 {menuContent: "Tab", navUrl: ComponentsUr.ui.tabPage},
                                 {menuContent: "Dialog", navUrl: ComponentsUr.ui.dialogPage},
+                                {menuContent: "Toast", navUrl: ComponentsUr.ui.toastPage},
                             ]
                         },
                     ]
