@@ -23,6 +23,8 @@ export const AppNavigation = {
                                 {menuContent: "Button", navUrl: ComponentsUr.ui.button},
                                 {menuContent: "Card", navUrl: ComponentsUr.ui.cardPage},
                                 {menuContent: "Image", navUrl: ComponentsUr.ui.imagePage},
+                                {menuContent: "Common", navUrl: ComponentsUr.ui.commonPage},
+                                {menuContent: "Grid", navUrl: ComponentsUr.ui.gridPage},
                             ]
                         },
                         {
