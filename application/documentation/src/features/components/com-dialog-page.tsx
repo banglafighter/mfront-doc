@@ -1,4 +1,4 @@
-import ComponentViewer from "../../component/component-viewer";
+import ComDialogView from "./component-element/com-dialog-view";
 
 function getUI() {
     return (
@@ -16,12 +16,7 @@ function getCodes() {
 export default function ComDialogPage() {
     return (
         <>
-            <ComponentViewer
-                title='Button'
-                subtitle='Button demo and codes'
-                ui={getUI()}
-                codes={getCodes()}
-            />
+            <ComDialogView/>
         </>
     )
 }
