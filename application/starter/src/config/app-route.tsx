@@ -24,6 +24,10 @@ export default class AppRoute extends MRoute {
         return NotFoundPage
     }
 
+    setBaseUrl(): string | null {
+        return "/mfront"
+    }
+
     registerRoute(route: MRoute): void {
         DocumentationRegistry.register(route)
     }

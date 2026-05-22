@@ -18,7 +18,6 @@ export const AppNavigation = {
                     items: [
                         {
                             menuContent: (<><SquareTerminal/> Essentials</>),
-                            collapsible: true,
                             nested: [
                                 {menuContent: "Button", navUrl: ComponentsUr.ui.button},
                                 {menuContent: "Card", navUrl: ComponentsUr.ui.cardPage},
@@ -29,14 +28,12 @@ export const AppNavigation = {
                         },
                         {
                             menuContent: (<><Form/> Inputs</>),
-                            collapsible: true,
                             nested: [
                                 {menuContent: "Button", navUrl: ComponentsUr.ui.button},
                             ]
                         },
                         {
                             menuContent: (<><Gem/> Advanced</>),
-                            collapsible: true,
                             nested: [
                                 {menuContent: "Tab", navUrl: ComponentsUr.ui.tabPage},
                                 {menuContent: "Dialog", navUrl: ComponentsUr.ui.dialogPage},

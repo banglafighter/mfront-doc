@@ -14,7 +14,7 @@ export default defineConfig(({mode}) => {
     )
 
     return {
-        base: '/',
+        base: '/mfront/',
         plugins: [
             react(),
             tailwindcss()
